@@ -1,0 +1,127 @@
+:root{
+  --white-color:hsl(0, 0%, 100%);
+  --light-pink:hsl(275, 100%, 97%);
+  --Grayish-purple:hsl(292, 16%, 49%);
+  --dark-purple:hsl(292, 42%, 14%);
+}
+*,::before,::after{
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  height: 100%;
+  margin: 0;
+  background-color: var(--light-pink );
+}
+
+main{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq{
+  width:max(36%,400px);
+  height: 60%;
+  background-color: var(--white-color);
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  top:-100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+h1{
+  color:var(--dark-purple);
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  width:30%;
+  justify-content: space-between;
+}
+#qst{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#qst p{
+  font-weight: 600;
+  color: var(--dark-purple);
+  display: inline-block;
+}
+#hide-show{
+  font-weight: 400;
+color: var(--Grayish-purple);
+font-size: 12px;
+line-height: 1.5;
+
+}
+
+hr{
+ border-top: 1px;
+ border-left:none;
+}
+button{
+  border: none;
+  background-color: white;
+}
+#qst p:hover{
+  color: purple;
+  cursor: pointer;
+  
+}
+.hide{
+  display: none;
+  
+}
+.hide1{
+  display: block;
+}
+.hide2{
+  display: none;
+}
+
+@media screen and (max-width:390px) {
+  .faq{
+      width:300px;
+      height: 80%;
+      top:-60px;  
+      padding: 10px;  
+  }
+  .hide1{
+      display: none;
+  }
+  .hide2{
+      display: block;
+  }
+
+  .title{
+      display: flex;
+      align-items: center;
+      width:35%;
+      justify-content: space-between;
+  }
+  #hide-show{
+      font-weight: 400;
+    color: var(--Grayish-purple);
+    font-size: 10px;
+    line-height: 1.4;
+    
+  }
+  body{
+      width: 100%;
+      font-family: 'Work Sans', sans-serif;
+      font-size: 12px;
+      height: 100%;
+      margin: 0;
+      background-color: var(--light-pink );
+  }
+}
+
